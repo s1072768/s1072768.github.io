@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嚮往</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap');
+
+        .img-1 {
+            background-image: url("pic/room/_1c7c7291-e9a3-48af-ba2c-a4eb8cf9ff61.jpg");
+        }
+        
+        .img-2 {
+            background-image: url("pic/game/OIG2.jpg");
+        }
+
+        .img-3 {
+            background-image: url("pic/read/_87e5eee4-523e-4fec-bc75-0d2406a8da20.jpg");
+        }
+
+        .img-4 {
+            background-image: url("pic/goal/_4e4a9694-5470-4a81-8802-f15b88fd71be.jpg");
+        }
+
+        .img-5 {
+            background-image: url("pic/food/_3f41de82-11f6-4f50-81ce-92b3b0869acf.jpg");
+        }
+
+        .img-6 {
+            background-image: url("pic/work/_3f520f8f-33e6-4baf-b3cf-7d683b2c7aac.jpg");
+        }
+
+        .img-7 {
+            background-image: url("pic/view/_8439cd0b-6fde-4957-924d-ce7def7fa652.jpg");
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax" style="background-image: url('_a881a0f1-cd48-4893-9a00-03f9011c2589.jpg');">
+        <div class="parallax-content">
+            <h1 class="text-center mb-4">嚮往，心之所向</h1>
+            <p class="lead text-center mb-5">你所熱愛的，就是你的生活</p>
+        </div>
+    </div>
+    
+    <div class="container1">
+      <div class="row">       
+          <div class="col hover-col">
+            <a href="residence.html">
+              <div class="img-container img-1"></div>
+              <h3 class="hover-text">理想居所</h3>
+            </a>
+          </div>
+        
+
+        
+            <div class="col hover-col">
+            <a href="enterment.html">
+                <div class="img-container img-2"></div>
+                <h3 class="hover-text">娛樂活動</h3>
+            </a>
+            </div>
+        
+
+        
+            <div class="col hover-col">
+            <a href="improvement.html">
+                <div class="img-container img-3"></div>
+                <h3 class="hover-text">自我進修</h3>
+            </a>
+            </div>
+        
+
+        
+            <div class="col hover-col">
+            <a href="aim.html">
+                <div class="img-container img-4"></div>
+                <h3 class="hover-text">人生目標</h3>
+            </a>
+            </div>
+        
+
+        
+            <div class="col hover-col">
+            <a href="victuals.html">
+                <div class="img-container img-5"></div>
+                <h3 class="hover-text">餐飲生活</h3>
+            </a>
+            </div>
+        
+
+        
+            <div class="col hover-col">
+            <a href="Profession.html">
+                <div class="img-container img-6"></div>
+                <h3 class="hover-text">夢想職業</h3>
+            </a>
+            </div>
+        
+
+       
+            <div class="col hover-col"> 
+            <a href="journey.html">
+                <div class="img-container img-7"></div>
+                <h3 class="hover-text">旅行遊玩</h3>
+            </a> 
+            </div>
+          
+
+      </div>
+  </div>
+  
+
+    <footer class="bg-dark text-light py-4">
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const hovercols = document.querySelectorAll('.hover-col');
+        hovercols.forEach(col => {
+            col.addEventListener('mouseenter', () => {
+                hovercols.forEach(c => c.classList.remove('active'));
+                col.classList.add('active');
+            });
+            col.addEventListener('mouseleave', () => {
+                col.classList.remove('active');
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</body>
+</html>
